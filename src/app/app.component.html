@@ -2,13 +2,10 @@
   <div class="container">
 
     <div class="row justify-content-center align-items-center vh-100">
-      <div class="col-6 text-center card py-5">
+      <div class="col-8 text-center card py-5">
         <div class="card-body py-4">
-            <h1 class="mb-2">Contador: {{ contador }}</h1>
-            <button class="btn btn-danger" (click)="subContador()">-1</button>            
-            <button class="btn btn-outline-primary mx-2" (click)="zerarContador()">Zerar</button>    
-            <button class="btn btn-success" (click)="addContador()">+1</button>
-            <div *ngIf="menorQueZero" class="alert alert-danger mt-3">Contador não pode ser menor que 0!</div>
+            <app-botoes-navegacao></app-botoes-navegacao>            
+            <router-outlet></router-outlet>
         </div>
       </div>
     </div>

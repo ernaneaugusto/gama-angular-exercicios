@@ -1,0 +1,7 @@
+<section>
+  <h1 class="mb-2">Contador: {{ contador }}</h1>
+  <button class="btn btn-danger" (click)="subContador()">-1</button>
+  <button class="btn btn-outline-primary mx-2" (click)="zerarContador()">Zerar</button>
+  <button class="btn btn-success" (click)="addContador()">+1</button>
+  <div *ngIf="menorQueZero" class="alert alert-danger mt-3">Contador não pode ser menor que 0!</div>
+</section>
