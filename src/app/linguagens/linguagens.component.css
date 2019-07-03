@@ -1,0 +1,11 @@
+.linguagens-item{
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 20px;  
+}
+.linguagens-item p{
+  margin-bottom: 0;
+  line-height: 1.3;
+}

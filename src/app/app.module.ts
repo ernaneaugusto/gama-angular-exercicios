@@ -8,6 +8,8 @@ import { ContadorComponent } from './contador/contador.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LinguagensComponent } from './linguagens/linguagens.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LinguagensItemComponent } from './linguagens-item/linguagens-item.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent  },
@@ -21,10 +23,12 @@ const routes: Routes = [
     BotoesNavegacaoComponent,
     ContadorComponent,
     HomeComponent,
-    LinguagensComponent
+    LinguagensComponent,
+    LinguagensItemComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

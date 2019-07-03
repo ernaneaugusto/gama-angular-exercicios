@@ -1,1 +1,5 @@
-<p>linguagens works!</p>
+<ul class="text-left list-unstyled">
+  <li *ngFor="let item of linguagens" class="linguagens-item shadow">
+    <app-linguagens-item [linguagens]="item"></app-linguagens-item>
+  </li>
+</ul>
